@@ -1,0 +1,275 @@
+*{
+	box-sizing: border-box;
+  }
+  body{
+	background-color: rgb(226, 198, 208);
+	color: #eb4b5e ;
+	font-family: candara, Helvetica, sans-serif;
+	margin: 0;
+	padding: 10px 50px 50px 50px;
+  }
+  #titulodoc
+  {
+   font-family:  Stencil Std, fantasy;
+  }
+  h1{
+	margin: 0;
+  }
+  header h1{
+	font-size: 5rem;
+	user-select: none;
+  }
+  #logo{
+	display: flex;
+	justify-content: center;
+	padding: 7px
+  }
+  #imglogo{
+	padding-right: 5px;
+	pointer-events: none;
+	user-select: none;
+  }
+  
+  .menu{
+	background-color: #eb4b5e;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+  }
+  
+  .menu a{
+	padding: 13px;
+	color: white;
+	text-decoration: none;
+	transition: background-color 0.8s;
+	user-select: none; 
+	display: block;
+	text-align: center;
+  }
+  .menu a:hover{
+	background-color: white;
+	color: #eb4b5e;
+	transition-delay:  0.1s;
+  }
+  
+  .coluna-esquerda{
+	float: left;
+	width: 75%;
+  }
+  
+  .coluna-direita{
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+  }
+  
+  .card {
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 15px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .lastcard{
+	margin-bottom: 170px;
+  }
+  
+  #promobanner{
+	height:200px ;
+	background-image: url('images/brigadeiros.jpg');
+	color: white;
+	font-size: 1vw;
+	position: relative; 
+	text-shadow: 1px 1px 5px #eb4b5e;
+	background-size:170% ;
+	transition: box-shadow 0.3s;
+  }
+  
+  #promobanner:hover{
+	box-shadow: 10px 10px 16px gray;
+	cursor: pointer;
+  }
+  
+  #promoh2{
+	position: absolute;
+	bottom: 1px;
+	right: 20px;
+  }
+  
+  .sobreimg{
+	height:75px ;
+	border-radius: 50%;
+	margin: 10px;
+	box-shadow: 0px 0px 7px gray;
+	cursor: pointer;
+	transition: box-shadow 0.3s;
+  }
+  
+  .sobreimg:hover{
+	box-shadow: 5px 10px 10px gray;
+  }
+  
+  .sobreitens{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .sobretexto a {
+	color:  #eb4b5e;
+  }
+  
+  .promo{
+	display: flex;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 8px;
+	cursor: pointer;
+	align-items: center;
+  }
+  
+  .promo:hover{
+	box-shadow: 0px 0px 20px gray;
+	transition: box-shadow 0.5s;
+  }
+  
+  .promo img {
+	height: 50px ;
+	border-radius: 50%; 
+	margin-right: 10px;
+  }
+  
+  .social{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .social img {
+	margin: 5px;
+	cursor: pointer;
+	transition: opacity 0.3s;
+  }
+  
+  .social img:hover{
+	opacity: 0.8;
+  }
+  
+  .grid img{
+	border-radius: 50%;
+	height: 150px ;
+	border: 2px solid #eb4b5e;
+	box-shadow: 1px 1px 1px;
+	cursor: pointer;
+  }
+  
+  .produto{
+	text-align: center;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 15px;
+	transition: box-shadow 0.4s;
+	font-size: 20px;
+  
+  }
+  
+  .produto:hover{
+	box-shadow: 5px 10px 15px #8888;
+  }
+  .grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+	grid-gap: 16px;
+  
+  }
+  
+  .tituloprod{
+	font-weight: bolder;
+  }
+  
+  .minigrid{
+	height: 330px;
+	  overflow: hidden;
+	  padding: 15px;
+  }
+  
+  #entrega{
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	height: 100px;
+	width: 300px;
+	
+  }
+  
+  #imgfixa {
+	position: absolute;
+	right: 10px;
+	border-radius: 50%;
+	width: 75px;
+  }
+  
+  #tel{
+	position: absolute;
+	height:60px ;
+	background-color: #eb4b5e;
+	color:white;
+	border-radius: 15px;
+	margin-top: 10px;
+	padding: 10px;
+	left: 16px;
+	opacity: 0;
+	
+  }
+  
+  #entrega img:hover + #tel{
+	opacity: 1 ;
+	transition: opacity 0.6s;
+  }
+  
+  #tel p{
+	margin: 0;
+  }
+  
+  @media screen and (max-width: 800px ) {
+	.coluna-esquerda{
+	width: 100%;
+  }
+  .coluna-direita{
+	width: 100%;
+	padding: 0;
+  }
+  
+  #imglogo{
+	width: 75px;
+	}
+  header h1{
+	font-size: 3rem;
+	user-select: none;
+  }
+  
+  #promobanner{
+	font-size: 4vw;
+	margin: 0;
+  }
+  
+  .promo{
+	font-size: 3vw;
+	
+  }
+  body{ 
+	padding: 5px 25px 25px 25px;
+  }
+  }
+  
+  @media screen and (max-width: 450px){
+  
+  .menu{
+  
+	display: block;
+   
+  }
+}
