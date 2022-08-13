@@ -70,9 +70,9 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: rgb(149, 91, 103);
     padding: 0 5px;
-    background: #fff;
+    background: rgb(135, 19, 19);
     transform: translateX(-50%);
 }
 
@@ -241,18 +241,18 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: #373f27;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #373f27;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: rgb(9, 7, 7);
     background: none;
 }
 
