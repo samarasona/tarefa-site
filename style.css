@@ -1,17 +1,16 @@
-/*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 html{
     scroll-behavior: smooth;
 }
 
-/* custom scroll bar */
+/* Barra de rolagem */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -77,7 +76,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* Estilo de barra de navegação */
 .navbar{
     position: fixed;
     width: 100%;
@@ -88,7 +87,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #636b46;
 }
 .navbar .max-width{
     display: flex;
@@ -96,7 +95,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: #373f27;
     font-size: 35px;
     font-weight: 600;
 }
@@ -113,36 +112,36 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color:#fffefd;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #cda34f;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
 
-/* menu btn styling */
+/* Estilo de menu */
 .menu-btn{
-    color: #fff;
+    color: #373f27;
     font-size: 23px;
     cursor: pointer;
-    display: none;
+    text-align: center;
 }
 .scroll-up-btn{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #373f27;
     right: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: #eff1e9;
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -165,28 +164,32 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg) no-repeat center;
+    background: url(https://i.pinimg.com/564x/56/d2/83/56d2838efba077611fb8f0eb7d45e3ba.jpg) no-repeat center;
     height: 100vh;
-    color: #fff;
-    min-height: 500px;
+    color:#e9e7da;
+    min-height: 700px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'arial';
+    
 }
 .home .max-width{
   width: 100%;
-  display: flex;
+  text-align: center;
 }
 .home .max-width .row{
   margin-right: 0;
 }
 .home .home-content .text-1{
     font-size: 27px;
+    
 }
 .home .home-content .text-2{
-    font-size: 75px;
+    font-size: 80px;
     font-weight: 600;
     margin-left: -3px;
+    
+
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -198,25 +201,21 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background:#373f27;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #373f27;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: rgb(255, 255, 255);
     background: none;
 }
 
-/* about section styling */
-.about .title::after{
-    content: "who i am";
-}
 .about .about-content .left{
     width: 45%;
 }
@@ -260,7 +259,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background: #cda34f;
 }
 .services .title::before,
 .teams .title::before{
@@ -268,20 +267,20 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
-    content: "what i provide";
+    background: #cda34f;
+   
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 50px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background:#373f27;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -289,11 +288,7 @@ section .title::after{
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
+
 .services .serv-content .card:hover i{
     color: #fff;
 }
@@ -305,15 +300,12 @@ section .title::after{
 
 /* skills section styling */
 
-.skills .title::after{
-    content: "what i know";
-}
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
     font-size: 20px;
-    font-weight: 600;
+    font-weight:600;
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
@@ -322,7 +314,7 @@ section .title::after{
 .skills .skills-content .left a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: rgb(17, 9, 9);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -379,11 +371,8 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
 .teams .carousel .card{
-    background: #222;
+    background: rgb(0, 0, 0);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -442,9 +431,7 @@ section .title::after{
 }
 
 /* contact section styling */
-.contact .title::after{
-    content: "get in touch";
-}
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
